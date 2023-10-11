@@ -76,4 +76,24 @@ body{
 #title{
     font-size: 200px;
     text-align: center;
+}   
+
+.search-button {
+    
+    background-color: #d7eaf8; 
+    color: #000000; 
+    border: solid #d7eaf8;
+    border-radius: 25px;
+    padding: 10px 150px; 
+    cursor: pointer; 
+    text-align: left;
+    float:right;
+    margin-top: 35px;
+    margin-right:60px;
+}
+
+.search-button::before {
+    content: "\f002"; 
+    font-family: "Font Awesome 5 Free"; 
+    margin-right: 5px; 
 }
