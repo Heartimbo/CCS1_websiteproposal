@@ -23,7 +23,7 @@ header {
     height: 175px;
 }
 
-.box {
+.search-box {
     background-color:#dfe9f4;
     justify-content: space-between;
     width: 330px;
@@ -36,7 +36,7 @@ header {
     cursor: pointer;
     text-align: left;
     margin-top: 60px;
-    margin-right: 80px;
+    margin-right: 100px;
     position: relative;
 }
 
