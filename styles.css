@@ -163,10 +163,19 @@ title {
 }   
 
 .sticky {
-    background-color: #0088a9;
-    height: 100px;
-    position: sticky;
-    top: 0;
+    background-color: #a6ebfab1;
+    background-image: linear-gradient(to right,rgba(111, 176, 216, 0.148), rgba(27, 36, 108, 0.456) );
+    height: 200px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.border {
+    background-color: #142c5c;
+    margin-top: 18px;
+    height: 15px;
+    width: 100%;
 }
 
 
