@@ -23,6 +23,14 @@ header {
     height: 175px;
 }
 
+.boxContainer {
+    margin: auto;
+    margin-top: 20%;
+    position: relative;
+    
+
+}
+
 .logo {
     height: 145px;
     margin-right: auto;
@@ -65,7 +73,7 @@ li, a {
 }
 
 .nav_links li:hover {
-    background-color: rgb(240, 249, 255);
+    background-color: rgb(211, 231, 244);
 }
 
 .nav_links li a:hover {
