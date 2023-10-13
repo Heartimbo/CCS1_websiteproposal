@@ -24,9 +24,10 @@ header {
 }
 
 .logo {
-    cursor: pointer;
-    order: 3;
-    margin-left: auto;
+    height: 145px;
+    margin-right: auto;
+    padding-top: 23px;
+    padding-left: 15px;
 }
 
 nav {
@@ -134,7 +135,7 @@ title {
     cursor: pointer; 
     text-align: left;
     float:right;
-    margin-top: 35px;
+    margin-top: 60px;
     margin-right:60px;
 }
 
