@@ -36,7 +36,7 @@ header {
     cursor: pointer;
     text-align: left;
     margin-top: 60px;
-    margin-right: 100px;
+    margin-right: 120px;
     position: relative;
 }
 
@@ -60,7 +60,7 @@ input {
 }
 
 .logo {
-    height: 145px;
+    height: 140px;
     margin-right: auto;
     padding-top: 23px;
     padding-left: 15px;
@@ -164,11 +164,12 @@ title {
 
 .bottom-div {
     background-color: #a6ebfab1;
-    background-image: linear-gradient(to right,rgba(111, 176, 216, 0.148), rgba(27, 36, 108, 0.456) );
-    height: 250px;
+    background-image: linear-gradient(to right,rgba(223, 241, 252, 0.391), rgba(27, 36, 108, 0.456) );
+    height: 300px;
     width: 100%;
-    position: relative;
+    position: fixed;
     bottom: 0;
+    backdrop-filter: blur(5px);
 }
 
 .border {
@@ -181,16 +182,26 @@ title {
 .bottom-logo {
     height: 240px;
     margin-right: auto;
-    padding-top: 33px;
-    padding-right: 70px;
+    padding-top: 50px;
+    padding-right: 180px;
     float: right;
 }
 
 .bottom-title {
-    margin-left: 60px;
-    font-size: 23px;
     font-family: "Montserrat", sans-serif;
-    color: #142c5c;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: #02102c;
+}
+
+.bottom-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: #041f54;
+    justify-content: center;
 }
 
 
