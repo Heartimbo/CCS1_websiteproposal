@@ -46,11 +46,13 @@ input {
     outline: none;
     background: none;
     font-size: 14px;
+    color: #255773;
 }
+
 
 .fa-solid {
     margin-top: 11px;
-    margin-left: 40px;
+    margin-left: 25px;
     opacity: 0.3;
 }
 .fa-solid:hover {
@@ -122,13 +124,14 @@ li, a {
     aspect-ratio: 16/9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
+    scroll-behavior:auto;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
 }
 
 .slider img {
     flex: 1 0 100%;
     scroll-snap-align: start;
+    border: solid 1px rgba(255, 255, 255, 0.44);
     object-fit: cover;
 }
 
