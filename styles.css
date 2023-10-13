@@ -193,6 +193,7 @@ title {
     margin-top: 10px;
     margin-left: 40px;
     color: #02102c;
+    display: flexbox;
 }
 
 .bottom-text {
@@ -202,6 +203,7 @@ title {
     margin-left: 40px;
     color: #041f54;
     justify-content: center;
+    display: flexbox;
 }
 
 
