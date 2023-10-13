@@ -24,25 +24,36 @@ header {
 }
 
 .box {
-    background-color: #eee;
+    background-color:#dfe9f4;
     float: right;
     width: 330px;
-    height: 50px;
+    height: 38px;
     border-radius: 50px;
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
     padding: 0px 50px;
+    cursor: pointer;
+    text-align: left;
+    margin-top: 60px;
+    margin-right: 80px;
+    position: relative;
 }
 
 input {
-    width: 240px;
+    width: 330px;
     border: none;
     outline: none;
+    margin-right: -30px;
     background: none;
-    font-size: 18px;
+    font-size: 14px;
 }
 
+.fa-solid {
+    margin-top: 10px;
+    margin-left: 40px;
+    opacity: 0.3;
+}
 .fa-solid:hover {
     color: #004add;
     cursor: pointer;
