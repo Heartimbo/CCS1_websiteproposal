@@ -162,10 +162,10 @@ title {
     text-align: center;
 }   
 
-.sticky {
+.bottom-div {
     background-color: #a6ebfab1;
     background-image: linear-gradient(to right,rgba(111, 176, 216, 0.148), rgba(27, 36, 108, 0.456) );
-    height: 200px;
+    height: 250px;
     width: 100%;
     position: relative;
     bottom: 0;
@@ -176,6 +176,21 @@ title {
     margin-top: 18px;
     height: 15px;
     width: 100%;
+}
+
+.bottom-logo {
+    height: 240px;
+    margin-right: auto;
+    padding-top: 33px;
+    padding-right: 70px;
+    float: right;
+}
+
+.bottom-title {
+    margin-left: 60px;
+    font-size: 23px;
+    font-family: "Montserrat", sans-serif;
+    color: #142c5c;
 }
 
 
