@@ -261,26 +261,5 @@ title {
 video {
     width: 100%; /* Set the video width to 100% of the parent container */
     height: auto; /* Maintain the video's aspect ratio */
-    position: relative; /* Enable positioning for the video */
-  top: -20px; /* Adjust this value to move the video up */
 }
 
-.about {
-    text-align: center;
-    position: relative;
-    bottom: -100px;
-    font-size: 70px;
-    display: inline-block;
-  background-color: #007bff; /* Circle background color */
-  color: #fff; /* Text color */
-  border-radius: 50%; /* Create a circle */
-  padding: 10px 20px;
-    margin-left: 800px;
-    box-shadow: 10px 10px 100px black;
-}
-
-.desc {
-    position: relative;
-    top: -400px;
-    right: -250px;
-}
