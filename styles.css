@@ -267,8 +267,7 @@ video {
     height: 300px;
     margin-right: auto;
     padding-top: 23px;
-    padding-left: 23px;
-    display
+    padding-left: 115px;
 }
 
 .aero-nautical {
@@ -293,6 +292,27 @@ video {
 }
 
 .physics {
+    height: 300px;
+    margin-right: auto;
+    padding-top: 23px;
+    padding-left: 23px;
+}
+
+.architecture {
+    height: 300px;
+    margin-right: auto;
+    padding-top: 23px;
+    padding-left: 23px;
+}
+
+.bartending {
+    height: 300px;
+    margin-right: auto;
+    padding-top: 23px;
+    padding-left: 23px;
+}
+
+.cosmetology {
     height: 300px;
     margin-right: auto;
     padding-top: 23px;
