@@ -66,7 +66,7 @@ input {
     padding-left: 15px;
 }
 
-nav {
+nav { 
     background-color: #0b6def;
     position: relative;
     margin-left: -45px;
@@ -79,15 +79,7 @@ nav {
     padding: 22px 10%;
 }
 
-li, a {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    color: #0088a9;
-    text-decoration: none;
-}
-
-.nav_links li {
+nav ul li {
     display: inline-block;
     list-style: none;
     margin-left: 20px;
@@ -98,15 +90,55 @@ li, a {
     cursor: pointer;
     transition: all 0.3s ease 0s;
     scroll-behavior: smooth;
+    position: relative;
 }
 
-.nav_links li:hover {
+nav ul li a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #0088a9;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li:hover {
     background-color: rgb(211, 231, 244);
 }
 
-.nav_links li a:hover {
+nav ul li a:hover {
     color: #255773;
 }
+nav ul li:hover  ul{
+    display: block;
+}
+nav ul li ul {
+    display: none;
+    list-style: none;
+    left: 0;
+    top: 30px;
+    padding: 2px 2px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    scroll-behavior: smooth;
+    position: absolute;
+    z-index: 999;
+}
+
+nav ul li ul li {
+    margin: 0;
+    border-radius: 10px;
+    display: block;
+    padding: 8px 8px 8px 8px;
+}
+
+nav ul li ul li a {
+    text-wrap: nowrap;  
+}
+
 
 .container {
     padding: 0rem;
