@@ -98,6 +98,7 @@ li, a {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    scroll-behavior: smooth;
 }
 
 .nav_links li:hover {
@@ -206,7 +207,9 @@ title {
 }
 
 .bg {
-    background-size: cover;
-    background-repeat: no-repeats;
+    width: 102%;
+    height: 100vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 
