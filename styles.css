@@ -200,7 +200,6 @@ title {
     background-image: linear-gradient(to right,rgba(223, 241, 252, 0.391), rgba(27, 36, 108, 0.456) );
     height: 270px;
     width: 100%;
-    position: fixed;
     bottom: 0;
     backdrop-filter: blur(5px);
 }
