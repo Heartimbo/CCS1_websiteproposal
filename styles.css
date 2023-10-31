@@ -212,6 +212,8 @@ title {
     width: 100%;
     bottom: 0;
     backdrop-filter: blur(5px);
+    display: grid;
+    place-items: left;
 }
 
 .border {
@@ -221,13 +223,6 @@ title {
     width: 100%;
 }
 
-.bottom-logo {
-    height: 240px;
-    margin-right: auto;
-    padding-top: 50px;
-    padding-right: 180px;
-    float: right;
-}
 
 .bottom-title {
     font-family: "Montserrat", sans-serif;
@@ -235,17 +230,15 @@ title {
     margin-top: 10px;
     margin-left: 40px;
     color: #02102c;
-    display: flexbox;
 }
 
 .bottom-text {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     margin-top: 10px;
-    margin-left: 40px;
+    margin-left: 20px;
     color: #041f54;
-    justify-content: center;
-    display: flexbox;
+    padding-left: 0px;
 }
 
 .bg {
@@ -259,24 +252,35 @@ title {
     font-family: "Montserrat", sans-serif;
     text-align: center;
     margin-top: 50px;
-    color: #07255b;
+    color: #051d49;
 }
 
 .admin_name {
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 35px;
     color: #143571;
+    font-weight: bold;
+}
+
+.admin_ {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-top: 8px;
+    color: #102b5d;
+    font-size: large;
 }
 
 .admin_position {
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 8px;
     color: #143571;
 }
 
 #img_admin {
+    display: grid;
+    place-items: center;
     margin-top: 20px;
 }
 
@@ -285,7 +289,17 @@ title {
     place-items: center;
 }
 
+#img_history {
+    display: grid;
+    margin-top: 35px;
+    height: 500px;
+    margin-left: 50px;
+}
 
+.history_wrapper {
+    display: grid;
+    text-align: left;
+}
 
 
 
