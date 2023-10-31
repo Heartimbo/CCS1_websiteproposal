@@ -255,6 +255,41 @@ title {
     background-repeat: no-repeat;
 }
 
+.admin {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    color: #07255b;
+}
+
+.admin_name {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-top: 25px;
+    color: #143571;
+}
+
+.admin_position {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-top: 5px;
+    color: #143571;
+}
+
+#img_admin {
+    margin-top: 20px;
+}
+
+.admin_wrapper {
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+
+
 .video-container {
     width: 50%; /* Set the width to 50% of the viewport */
     max-width: 100%; /* Optional: Set a maximum width to prevent the video from exceeding its native resolution */
