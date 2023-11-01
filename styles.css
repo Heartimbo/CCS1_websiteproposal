@@ -256,6 +256,7 @@ title {
     text-align: center;
     margin-top: 50px;
     color: #051d49;
+    margin-bottom: 10px;
 }
 
 .admin_name {
@@ -269,9 +270,27 @@ title {
 .admin_ {
     font-family: "Montserrat", sans-serif;
     text-align: center;
+    margin-top: 5px;
+    color: #102b5d;
+    font-size:x-large;
+}
+
+.admin_1 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
     margin-top: 8px;
     color: #102b5d;
-    font-size: large;
+    font-size:xx-large;
+}
+
+.text_title {
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    margin-top: 8px;
+    color: #102b5d;
+    font-size: 30px;
+    padding-left: 55px;
+    margin-bottom: 10px;
 }
 
 .admin_position {
@@ -292,20 +311,25 @@ title {
     place-items: center;
 }
 
+
 .img_history {
     display: grid;
+    height: fit-content;
+
 }
 
 #img_his {
     margin-top: 35px;
     height: 500px;
     margin-left: 55px;
+    padding-bottom: 20px;
 }
 
 .history_wrapper {
     display: grid;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .history_text {
@@ -317,12 +341,67 @@ title {
     text-align: justify;
     text-justify: inter-word;
     padding-left: 40px;
-    padding-right: 100px;
+    padding-right: 55px;
+    line-height: 30px;
 }
 
 .txt_history {
     margin-top: 40px;
 }
+
+.img_holder {
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+.img_title {
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    color: #102b5d;
+    font-size:x-large;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+.feat_col {
+    float: left;
+}
+
+.feat_row {
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+.feat_title {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: #102b5d;
+    font-size:large;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+#img_feat {
+    margin-top: 35px;
+    height: 500px;
+    margin: 55px;
+    margin-bottom: 0%;
+    padding-bottom: 20px;
+}
+
+.feat_text {
+    font-family: "Montserrat", sans-serif;
+    text-align:center;
+    margin-top: 8px;
+    color: #102b5d;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
 
 
 
