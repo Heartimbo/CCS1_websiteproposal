@@ -41,7 +41,7 @@ body {
     cursor: pointer;
     text-align: left;
     margin-top: 90px;
-    margin-right: 140px;
+    margin-right: 150px;
     position: relative;
 }
 
@@ -401,11 +401,46 @@ title {
     margin-bottom: 10px;
 }
 
+.vmg {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+    color: #051d49;
+    margin-bottom: 10px;
+}
 
+.vmg_p {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    color: #102b5d;
+    font-size: 24px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
 
+.vmg_note {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    color: #102b5d;
+    font-size: 25px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
 
 .video-container {
-    width: 50%; /* Set the width to 50% of the viewport */
+    width: 80%; /* Set the width to 50% of the viewport */
     max-width: 100%; /* Optional: Set a maximum width to prevent the video from exceeding its native resolution */
     height: 100vh; /* Set the height to 100% of the viewport's height */
     margin: 0 auto; /* Center the container horizontally */
