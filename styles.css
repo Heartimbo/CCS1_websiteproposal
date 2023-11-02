@@ -439,6 +439,51 @@ title {
     font-weight: bold;
 }
 
+.hymn {
+    width: 40%;
+    margin: 50px;
+}
+
+.hymn_wrapper {
+    display: grid;
+    place-items: center;
+}
+
+#img_admissions {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+    width: 85%;
+}
+
+.adm {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 170px;
+    color: #051d49;
+    margin-bottom: 10px;
+}
+
+
+.admissions_p {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    color: #102b5d;
+    font-size: 24px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 300px;
+    margin-left: 170px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+
+
 .video-container {
     width: 80%; /* Set the width to 50% of the viewport */
     max-width: 100%; /* Optional: Set a maximum width to prevent the video from exceeding its native resolution */
