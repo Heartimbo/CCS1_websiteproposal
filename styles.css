@@ -388,6 +388,14 @@ title {
     padding-bottom: 10px;
 }
 
+.feat_desc {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: #102b5d;
+    font-size:13px;
+    padding-bottom: 10px;
+}
+
 .feat_titlee {
     font-family: "Montserrat", sans-serif;
     text-align: center;
