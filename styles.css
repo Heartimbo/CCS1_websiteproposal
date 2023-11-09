@@ -127,7 +127,7 @@ nav ul li a:hover {
     list-style: none;
     left: 0px;
     top: 38px;
-    padding: 2px 2px;
+    padding: 7px 7px;
     background-color: white;
     border: none;
     border-radius: 10px;
@@ -142,7 +142,7 @@ nav ul li a:hover {
     margin: 0;
     border-radius: 10px;
     display: block;
-    padding: 8px 8px 8px 8px;
+    padding: 10px;
     width: 100%;
 }
 
