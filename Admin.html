@@ -68,49 +68,107 @@
     </nav>
     <style>
         body {
-            background-image: url('CAMPUS/background.png'); /
+            background-image: url('CAMPUS/background.png'); 
             background-size: cover;
             background-repeat: no-repeat;
         }
     </style>
-
+  
     <div class="wrapper">
         <h1 class="admin"> College Administrators </h1>
         <div class="admin_wrapper">
             <img id="img_admin" src="CAMPUS/ISCP.jpeg" alt="ISCP Campus View"/>
-        </div>  
+            
+        <section>
+            <div class="container reveal">
         <h1 class="admin"> Executive Officers </h1>
         <h2 class="admin_name"> Heart T. Imbo, CS </h2>
         <h4 class="admin_position"> President </h4>
+            </div>
+        </section>
 
+        <section>
+            <div class="container reveal">
         <h2 class="admin_name"> Shawn Lawrence Alpas, IT </h2>
         <h4 class="admin_position"> Vice President </h4>
+        </div>
+        </section>
 
+        <section>
+            <div class="container reveal">
         <h1 class="admin"> Academic Division </h1>
         <h2 class="admin_"> DEANS AND DIRECTORS </h2>
+        </div>
+    </section>
 
+        <section>
+            <div class="container reveal">
         <h2 class="admin_name"> Luh Bhie </h2>
         <h4 class="admin_position"> Dean, College of Theatre Arts </h4>
+    </div>
+</section>
 
+        <section>
+            <div class="container reveal">
         <h2 class="admin_name"> Prof. Didjay Vidjay </h2>
         <h4 class="admin_position"> Dean, College in Business Administration </h4>
+    </div>
+</section>
 
+        <section>
+            <div class="container reveal">
         <h2 class="admin_name"> Atty. Chen Diokmo </h2>
         <h4 class="admin_position"> Dean, College of Law and Dentistry </h4>
+    </div>
+</section>
 
+        <section>
+            <div class="container reveal">
         <h2 class="admin_name"> Kikki Pangininan </h2>
         <h4 class="admin_position"> Dean, College of Agriculture </h4>   
-        
+    </div>
+</section>
+
+        <section>
+            <div class="container reveal">
         <h2 class="admin_name"> Atty. Romena Cuazon </h2>
         <h4 class="admin_position"> Dean, College of Mass Communication </h4>  
+    </div>
+</section>
 
+        <section>
+            <div class="container reveal">
         <h2 class="admin_name"> Prof. Kimmi Atiemza </h2>
         <h4 class="admin_position"> Dean, College of Education </h4>  
+    </div>
+</section>
         <br>
         <br>
         <br>  
     </div>
+    </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i = 0; i < reveals.length; i++){
+                
+                var windowheight = window.innerHeight;
+                var revealtop = reveals [i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals [i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
     
+    </script>
 
 </body>
 </html>
