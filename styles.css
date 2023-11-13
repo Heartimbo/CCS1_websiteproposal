@@ -172,7 +172,7 @@ nav ul li:hover ul{
     aspect-ratio: 16/9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scroll-behavior:auto;
+    scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
 }
 
@@ -651,4 +651,38 @@ video {
     font-size:x-large;
     padding-left: 40px;
     margin-top: 180px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#00b4d8, #90e0ef);
+    border-radius: 10px;
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 250ms ease-in; 
+}
+
+.fade-in.appear{
+    opacity: 1;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(150px);
+    opacity: 1;
 }
