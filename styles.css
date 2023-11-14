@@ -261,6 +261,14 @@ title {
     margin-bottom: 10px;
 }
 
+.admin1 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-top: 60px;
+    color: #051d49;
+    margin-bottom: 10px;
+}
+
 .admin_name {
     font-family: "Montserrat", sans-serif;
     text-align: center;
@@ -327,6 +335,14 @@ title {
     padding-bottom: 20px;
 }
 
+#img_his:hover {
+   box-shadow: 0 50px 80px rgba(0,0,0,.2);
+}
+
+#img_feat:hover {
+    box-shadow: 0 50px 80px rgba(0,0,0,.2);
+ }
+ 
 .history_wrapper {
     display: grid;
     display: flex;
