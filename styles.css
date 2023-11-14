@@ -256,7 +256,7 @@ title {
 .admin {
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    margin-top: 50px;
+    margin-top: -60px;
     color: #051d49;
     margin-bottom: 10px;
 }
@@ -331,7 +331,7 @@ title {
     display: grid;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .history_text {
@@ -685,4 +685,34 @@ video {
 .reveal.active{
     transform: translateY(150px);
     opacity: 1;
+}
+
+.content{
+    display: none;
+}
+
+.loader{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #152747;
+    position: absolute;
+}
+
+.loader>div{
+    height:100px;
+    width: 100px;
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.load{
+    width: 200px;
+    justify-content: center;
+    margin-left: 850px;
+    margin-top: 400px;
 }
