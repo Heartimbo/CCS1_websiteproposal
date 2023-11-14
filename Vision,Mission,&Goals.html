@@ -10,8 +10,15 @@
         <link rel="stylesheet" href="styles.css">
 
         <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>      
+    <div class="loader">
+        <div><img class="load" src="pics/logo.png" 
+            alt="International State College of the Philippines logo"></div>
+    </div>
+    <div class="content"> 
+
         <div class="navbar-header">
             <img class="logo" src="pics/logo.png" 
             alt="International State College of the Philippines logo">
@@ -68,13 +75,14 @@
     </nav>
     <style>
         body {
-            background-image: url('CAMPUS/background.png'); /
+            background-image: url('CAMPUS/background.png'); 
             background-size: cover;
             background-repeat: no-repeat;
         }
     </style>
 
 <div class="wrapper">
+    <div class="container reveal">
 <h1 class="vmg"> VISION </h1>
 
 <div class="vmg_wrapper">
@@ -86,7 +94,7 @@
         waiting in long queues, and embracing the chaos of life with a smile. </p>
 </div>
 
-
+<div class="container reveal">
 <h1 class="vmg"> MISSION </h1>
 <div class="vmg_wrapper">
     <p class="vmg_p">
@@ -98,7 +106,7 @@
         bonding over shared confusion and disbelief, as they embark on a journey filled with 
         inexplicable rules and regulations. </p>
     </div>
-
+    <div class="container reveal">
     <h1 class="vmg"> GOALS </h1>
     <div class="vmg_wrapper">
         <p class="vmg_p">
@@ -135,7 +143,7 @@
             We strive to build a community where confusion is not just tolerated but embraced. By organizing seminars on topics that nobody understands and hosting workshops that leave participants scratching their heads, we will foster a sense of unity among our bewildered student body. 
         </p>
     </div>
-
+    <div class="container reveal">
 <h1 class="vmg"> VALUES </h1>
 <div class="vmg_wrapper">
     <p class="vmg_p">
@@ -174,11 +182,42 @@
         <br>
         <br>
     </p>
-
+    <div class="container reveal">
     <p class="vmg_note">
         Remember, this satirical vision, mission, goals, and values are meant purely for humor and not to reflect the actual objectives of any real educational institution.
     </p>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    for (var i = 0; i < reveals.length; i++){
+        
+        var windowheight = window.innerHeight;
+        var revealtop = reveals [i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals [i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+</script>
+<script>
+    $(window).on('load', function(){
+        $(".loader").fadeOut(1000);
+        $(".content").fadeIn(1000);
+    })
+</script>
 </body>
 </html>
