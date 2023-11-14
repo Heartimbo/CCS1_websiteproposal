@@ -10,8 +10,14 @@
         <link rel="stylesheet" href="styles.css">
 
         <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>      
+    <div class="loader">
+        <div><img class="load" src="pics/logo.png" 
+            alt="International State College of the Philippines logo"></div>
+    </div>
+    <div class="content"> 
         <div class="navbar-header">
             <img class="logo" src="pics/logo.png" 
             alt="International State College of the Philippines logo">
@@ -66,10 +72,12 @@
             </li>
         </ul>
     </nav>
+ 
+
 
     <style>
         body {
-            background-image: url('CAMPUS/background.png'); /
+            background-image: url('CAMPUS/background.png'); 
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -82,7 +90,15 @@
             <video autoplay controls>
                 <source src="CAMPUS/ISCP Hymn.mp4" type="video/mp4" alt="ISCP Hymn">
             </video>
-        </div>
+
 </div>
+</div>
+</div>
+<script>
+    $(window).on('load', function(){
+        $(".loader").fadeOut(1000);
+        $(".content").fadeIn(1000);
+    })
+</script>
 </body>
 </html>
