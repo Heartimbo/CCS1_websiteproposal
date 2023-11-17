@@ -10,8 +10,14 @@
         <link rel="stylesheet" href="styles.css">
 
         <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>      
+    <div class="loader">
+        <div><img class="load" src="pics/logo.png" 
+            alt="International State College of the Philippines logo"></div>
+    </div>
+    <div class="content"> 
         <div class="navbar-header">
             <img class="logo" src="pics/logo.png" 
             alt="International State College of the Philippines logo">
@@ -42,7 +48,6 @@
             <li><a href="#">ADMISSIONS <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
                     <li><a href="Enrollment.html">ENROLLMENT</a></li>
-                    <li><a href="Tuition&Costs.html">TUITION & COSTS</a></li>
                 </ul>
             </li>
             
@@ -53,13 +58,17 @@
             </li>
             <li><a href="#">SERVICES <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
+                    <li><a href="Alumni.html">ALUMNI</a></li>
+                    <li><a href="Dormitories.html">DORMITORIES</a></li>
                     <li><a href="CampusChaplaincy.html">CAMPUS CHAPLAINCY</a></li>
+                    <li><a href="FoodServices.html">FOOD SERVICES</a></li>
                     <li><a href="StudentAffairs.html">STUDENT AFFAIRS</a></li>
-                    <li><a href="#">COLLEGE MANUAL</a></li>
+                    <li><a href="SchoolManual.html">COLLEGE MANUAL</a></li>
                 </ul>
             </li>
             <li><a href="#">NEWS <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
+                    <li><a href="Events.html">EVENTS</a></li>
                     <li><a href="Advisories.html">ADVISORIES</a></li>
                     <li><a href="Guidelines.html">GUIDELINES</a></li>
                 </ul>
@@ -68,15 +77,17 @@
     </nav>
     <style>
         body {
-            background-image: url('CAMPUS/background.png'); /
+            background-image: url('CAMPUS/background.png'); 
             background-size: cover;
             background-repeat: no-repeat;
         }
     </style>
 
+<div class="container reveal">
 <div class="wrapper">
     <h1 class="vmg"> THE ISCP SCHOOL MANUAL </h1>
 
+    <div class="container reveal">
 <h1 class="vmg"> Section 1: Attending Classes </h1>
 
 <div class="vmg_wrapper">
@@ -86,7 +97,7 @@
 <br><br>1.b Taking Notes: Don't bother taking notes; just rely on your photographic memory, which we're sure you possess. If not, just make sure to ask for your friend's notes five minutes before the final exam. </p>
 </div>
 
-
+<div class="container reveal">
 <h1 class="vmg"> Section 2: Studying </h1>
 <div class="vmg_wrapper">
     <p class="vmg_p">
@@ -95,6 +106,7 @@
         <br> <br>2.b Study Environment: Find the loudest and most distracting place to study, like a rock concert or a construction site. It'll sharpen your ability to concentrate under any circumstances.</p>
     </div>
 
+    <div class="container reveal">
     <h1 class="vmg"> Section 3: Social Life </h1>
     <div class="vmg_wrapper">
         <p class="vmg_p">
@@ -104,6 +116,7 @@
         </p>
     </div>
 
+    <div class="container reveal">
 <h1 class="vmg"> Section 4: Assignments and Essays </h1>
 <div class="vmg_wrapper">
     <p class="vmg_p">
@@ -112,12 +125,14 @@
 <br> <br>4.b Citations: Who needs proper citations? Just sprinkle a few random websites and hope that nobody notices. If caught, blame it on your pet hamster's attempt at using the keyboard.
     </p>
 
+    <div class="container reveal">
 <h1 class="vmg"> Section 5: Office Hours </h1>
 <div class="vmg_wrapper">
     <p class="vmg_p">
         5.a Professor Meetings: Never, under any circumstances, visit your professors during office hours. They're just there for decoration, right? Your questions can wait until the night before the final.
     </p>
     
+    <div class="container reveal">
 <h1 class="vmg"> Section 6: Graduation </h1>
 <div class="vmg_wrapper">
     <p class="vmg_p">
@@ -129,5 +144,31 @@
     </p>
 </div>
 </div>
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    for (var i = 0; i < reveals.length; i++){
+        
+        var windowheight = window.innerHeight;
+        var revealtop = reveals [i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals [i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+</script>
+<script>
+    $(window).on('load', function(){
+        $(".loader").fadeOut(1000);
+        $(".content").fadeIn(1000);
+    })
+</script>
 </body>
 </html>
