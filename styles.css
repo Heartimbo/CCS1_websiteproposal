@@ -122,9 +122,9 @@ nav ul li:hover {
 nav ul li a:hover {
     color: #255773;
 }
-
 .dropdown {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     list-style: none;
     left: 0px;
     top: 38px;
@@ -133,7 +133,7 @@ nav ul li a:hover {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s, visibility 0s ease 0.3s;
     scroll-behavior: smooth;
     position: absolute;
     z-index: 999;
@@ -150,12 +150,15 @@ nav ul li a:hover {
 
 .dropdown li a {
     text-align: left;
-    text-wrap: nowrap;  
+    text-wrap: nowrap;
 }
 
-nav ul li:hover ul{
-    display: block;
+nav ul li:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
 }
+
 
 .container {
     padding: 0rem;
