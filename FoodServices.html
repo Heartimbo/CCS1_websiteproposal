@@ -10,8 +10,15 @@
         <link rel="stylesheet" href="styles.css">
 
         <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 <body>      
+    <div class="loader">
+        <div><img class="load" src="pics/logo.png" 
+            alt="International State College of the Philippines logo"></div>
+    </div>
+    <div class="content"> 
         <div class="navbar-header">
             <img class="logo" src="pics/logo.png" 
             alt="International State College of the Philippines logo">
@@ -80,15 +87,16 @@
     </nav>
     <style>
         body {
-            background-image: url('CAMPUS/background.png'); /
+            background-image: url('CAMPUS/background.png'); 
             background-size: cover;
             background-repeat: no-repeat;
         }
     </style>
 
 <div class="wrapper">
-<h1 class="vmg"> FOOD SERVICES </h1>
+<h1 class="vmg1"> FOOD SERVICES </h1>
 
+<div class="container reveal">
 <div class="vmg_wrapper">
     <p class="vmg_p"> 
         "Ah, school food services, the pinnacle of culinary excellence and gourmet dining. When you think of a five-star restaurant, you're probably picturing a dingy cafeteria tray piled high with mystery meat, overcooked vegetables, and a side of lukewarm instant mashed potatoes. 
@@ -100,6 +108,7 @@
         In conclusion, school food services are the epitome of fine dining for those seeking a unique culinary adventure. Bon appétit!" </p>
 </div>
 
+<div class="container reveal">
 <div class="wrapper">
     <h2 class="feat_textt"> ISCP CANTEEN MENU AND SERVICES </h2>
     <div class="feat_coll">
@@ -107,7 +116,8 @@
         <img id="img_featt" src="CanteenFood/Lunch Menu.jpg" alt="FREE WATER"/> 
     </div>
 
-    <div class="feat_row">
+    <div class="container reveal">
+    <div class="feat_row1">
         <div class="feat_col">
             <img id="img_feat" src="CanteenFood/Adobo.jpg" alt="BILINGUAL ADOBO"/>
             <h2 class="feat_title"> BILINGUAL ADOBO</h2>
@@ -124,7 +134,8 @@
         </div>
     </div>
 
-    <div class="feat_row">
+    <div class="container reveal">
+    <div class="feat_row1">
         <div class="feat_col">
             <img id="img_feat" src="CanteenFood/Dispensers.jpg" alt="FOOD DISPENSERS"/>
             <h2 class="feat_title"> CANTEEN DISPENSERS </h2>
@@ -139,7 +150,8 @@
         </div> 
     </div>
 
-    <div class="feat_row">
+    <div class="container reveal">
+    <div class="feat_row2">
         <div class="feat_col">
             <img id="img_feat" src="CanteenFood/Healthy Meals.jpg" alt="HEALTHY MEALS"/>
             <h2 class="feat_title"> HEALTHY MEALS </h2>
@@ -155,7 +167,8 @@
     </div>
     </div>
 
-    <div class="feat_row">
+    <div class="container reveal">
+    <div class="feat_row3">
         <div class="feat_col">
             <img id="img_feat" src="CanteenFood/Soup.jpg" alt="FREE SOUP"/>
             <h2 class="feat_title"> FREE SOUP </h2>
@@ -171,7 +184,8 @@
     </div>
     </div>
 
-    <div class="feat_row">
+    <div class="container reveal">
+    <div class="feat_row4">
         <div class="feat_col">
             <img id="img_feat" src="CanteenFood/Sinigang Frappuccino.jpg" alt="SINIGANG FRAPPUCINO"/>
             <h2 class="feat_title"> SINIGANG FRAPPUCINO </h2>
@@ -182,5 +196,50 @@
         </div>
     </div>
     </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+            <script type="text/javascript">
+                VanillaTilt.init(document.querySelectorAll("#img_his"), {
+                    max: 25,
+                    speed: 400
+                });
+
+                VanillaTilt.init(document.querySelectorAll("#img_feat"), {
+                    max: 25,
+                    speed: 400
+                });
+
+                
+            </script>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+    function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+        for (var i = 0; i < reveals.length; i++){
+            
+            var windowheight = window.innerHeight;
+            var revealtop = reveals [i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealtop < windowheight - revealpoint){
+                reveals [i].classList.add('active');
+            }
+            else{
+                reveals[i].classList.remove('active');
+            }
+        }
+    }
+    </script>
+    <script>
+        $(window).on('load', function(){
+            $(".loader").fadeOut(1000);
+            $(".content").fadeIn(1000);
+        })
+    </script>
 </body>
 </html>
