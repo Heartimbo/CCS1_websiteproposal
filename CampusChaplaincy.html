@@ -10,8 +10,14 @@
         <link rel="stylesheet" href="styles.css">
 
         <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>      
+    <div class="loader">
+        <div><img class="load" src="pics/logo.png" 
+            alt="International State College of the Philippines logo"></div>
+    </div>
+    <div class="content"> 
         <div class="navbar-header">
             <img class="logo" src="pics/logo.png" 
             alt="International State College of the Philippines logo">
@@ -42,7 +48,6 @@
             <li><a href="#">ADMISSIONS <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
                     <li><a href="Enrollment.html">ENROLLMENT</a></li>
-                    <li><a href="Tuition&Costs.html">TUITION & COSTS</a></li>
                 </ul>
             </li>
             
@@ -53,13 +58,17 @@
             </li>
             <li><a href="#">SERVICES <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
-                    <li><a href="#">CAMPUS CHAPLAINCY</a></li>
+                    <li><a href="Alumni.html">ALUMNI</a></li>
+                    <li><a href="Dormitories.html">DORMITORIES</a></li>
+                    <li><a href="CampusChaplaincy.html">CAMPUS CHAPLAINCY</a></li>
+                    <li><a href="FoodServices.html">FOOD SERVICES</a></li>
                     <li><a href="StudentAffairs.html">STUDENT AFFAIRS</a></li>
                     <li><a href="SchoolManual.html">COLLEGE MANUAL</a></li>
                 </ul>
             </li>
             <li><a href="#">NEWS <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
+                    <li><a href="Events.html">EVENTS</a></li>
                     <li><a href="Advisories.html">ADVISORIES</a></li>
                     <li><a href="Guidelines.html">GUIDELINES</a></li>
                 </ul>
@@ -68,14 +77,15 @@
     </nav>
     <style>
         body {
-            background-image: url('CAMPUS/background.png'); /
+            background-image: url('CAMPUS/background.png'); 
             background-size: cover;
             background-repeat: no-repeat;
         }
     </style>
 
+
 <div class="wrapper">
-<h1 class="vmg"> CAMPUS CHAPLAINCY </h1>
+<h1 class="vmgt"> CAMPUS CHAPLAINCY </h1>
 
 <div class="vmg_wrapper">
     <p class="vmg_p"> 
@@ -88,5 +98,11 @@
         So, if you ever find yourself struggling with the profound question of whether to attend that boring lecture or just pray for an 'A' in your dorm room, 
         the campus chaplaincy is there to guide you on your epic quest for academic salvation!" </p>
 </div>
+<script>
+    $(window).on('load', function(){
+        $(".loader").fadeOut(1000);
+        $(".content").fadeIn(1000);
+    })
+</script>
 </body>
 </html>

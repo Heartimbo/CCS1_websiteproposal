@@ -259,7 +259,15 @@ title {
 .admin {
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    margin-top: 50px;
+    margin-top: -60px;
+    color: #051d49;
+    margin-bottom: 10px;
+}
+
+.admin1 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-top: 60px;
     color: #051d49;
     margin-bottom: 10px;
 }
@@ -330,11 +338,19 @@ title {
     padding-bottom: 20px;
 }
 
+#img_his:hover {
+   box-shadow: 0 50px 80px rgba(0,0,0,.2);
+}
+
+#img_feat:hover {
+    box-shadow: 0 50px 80px rgba(0,0,0,.2);
+ }
+ 
 .history_wrapper {
     display: grid;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .history_text {
@@ -370,7 +386,7 @@ title {
     padding-bottom: 10px;
 }
 
-.feat_col {
+.feat_col { 
     float: left;
 }
 
@@ -383,6 +399,55 @@ title {
     place-items: center;
     justify-content: center;
     display:flex;
+    margin-top: -120px;
+}
+
+.feat1_row {
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    display:flex;
+    margin-top: -120px;
+}
+
+.feat2_row {
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    display:flex;
+    margin-top: 15px;
+}
+
+.feat_row1 {
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    display:flex;
+    margin-top: -120px;
+}
+
+.feat_row2 {
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    display:flex;
+    margin-top: -120px;
+}
+
+.feat_row3 {
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    display:flex;
+    margin-top: 60px;
+}
+
+.feat_row4 {
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    display:flex;
+    margin-top: 60px;
 }
 
 .feat_title {
@@ -423,7 +488,7 @@ title {
     margin-top: 35px;
     height: 800px;
     margin: 55px;
-    margin-bottom: 0%;
+    margin-bottom: 20px;
     padding-bottom: 20px;
     padding-left: 580px;
 }
@@ -440,9 +505,9 @@ title {
 .feat_textt {
     font-family: "Montserrat", sans-serif;
     text-align:center;
-    margin-top: 50px;
+    margin-top: -0px;
     color: #102b5d;
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 10px;
 }
 
@@ -451,9 +516,27 @@ title {
     font-family: "Montserrat", sans-serif;
     font-size: 50px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: -50px;
     color: #051d49;
     margin-bottom: 10px;
+}
+
+.vmgt {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    color: #051d49;
+    margin-bottom: 0px;
+}
+
+.vmg1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 52px;
+    color: #051d49;
+    margin-bottom: -100px;
 }
 
 .vmg_p {
@@ -507,7 +590,7 @@ title {
     font-family: "Montserrat", sans-serif;
     font-size: 40px;
     text-align: left;
-    margin-top: 50px;
+    margin-top: -100px;
     margin-left: 200px;
     color: #051d49;
     margin-bottom: 10px;
@@ -688,4 +771,34 @@ video {
 .reveal.active{
     transform: translateY(150px);
     opacity: 1;
+}
+
+.content{
+    display: none;
+}
+
+.loader{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #152747;
+    position: absolute;
+}
+
+.loader>div{
+    height:100px;
+    width: 100px;
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.load{
+    width: 200px;
+    justify-content: center;
+    margin-left: 850px;
+    margin-top: 400px;
 }

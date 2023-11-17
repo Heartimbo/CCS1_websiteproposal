@@ -10,8 +10,15 @@
         <link rel="stylesheet" href="styles.css">
 
         <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 <body>      
+    <div class="loader">
+        <div><img class="load" src="pics/logo.png" 
+            alt="International State College of the Philippines logo"></div>
+    </div>
+    <div class="content"> 
         <div class="navbar-header">
             <img class="logo" src="pics/logo.png" 
             alt="International State College of the Philippines logo">
@@ -33,7 +40,7 @@
                 <ul class="dropdown">
                     <li><a href="Admin.html">ADMIN</a></li>
                     <li><a href="Hymn.html">HYMN</a></li>
-                    <li><a href="#">HISTORY</a></li>
+                    <li><a href="History.html">HISTORY</a></li>
                     <li><a href="CampusVirtualTour.html"> CAMPUS VIRTUAL TOUR </a></li>
                     <li><a href="Vision,Mission,&Goals.html">VISION, MISSION & GOALS</a></li>
                 </ul>
@@ -42,45 +49,36 @@
             <li><a href="#">ADMISSIONS <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
                     <li><a href="Enrollment.html">ENROLLMENT</a></li>
-                    <li><a href="Tuition&Costs.html">TUITION & COSTS</a></li>
-                    <li><a href="#">SCHOLARSHIPS & AID</a></li>
-                    <li><a href="#">SCHOOL CALENDAR</a></li>
                 </ul>
             </li>
             
             <li><a href="#">ACADEMICS <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
                     <li><a href="Programs.html">PROGRAMS</a></li>
-                    <li><a href="#">ACADEMIC UNITS</a></li>
-                    <li><a href="#">E-LIBRARY</a></li>
-                    <li><a href="#">FACULTY LISTING</a></li>
-                    <li><a href="#">INFORMATION HUB</a></li>
                 </ul>
             </li>
             <li><a href="#">SERVICES <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
-                    <li><a href="#">ALUMNI</a></li>
-                    <li><a href="#">DORMITORIES</a></li>
-                    <li><a href="#">CAMPUS CHAPLAINCY</a></li>
-                    <li><a href="#">FOOD SERVICES</a></li>
-                    <li><a href="#">STUDENT AFFAIRS</a></li>
-                    <li><a href="#">COLLEGE MANUAL</a></li>
+                    <li><a href="Alumni.html">ALUMNI</a></li>
+                    <li><a href="Dormitories.html">DORMITORIES</a></li>
+                    <li><a href="CampusChaplaincy.html">CAMPUS CHAPLAINCY</a></li>
+                    <li><a href="FoodServices.html">FOOD SERVICES</a></li>
+                    <li><a href="StudentAffairs.html">STUDENT AFFAIRS</a></li>
+                    <li><a href="SchoolManual.html">COLLEGE MANUAL</a></li>
                 </ul>
             </li>
             <li><a href="#">NEWS <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
-                    <li><a href="#">EVENTS</a></li>
-                    <li><a href="#">E-PUBS</a></li>
-                    <li><a href="#">ADVISORIES</a></li>
-                    <li><a href="#">GUIDELINES</a></li>
-                    <li><a href="#">ALUMNI UPDATES</a></li>
+                    <li><a href="Events.html">EVENTS</a></li>
+                    <li><a href="Advisories.html">ADVISORIES</a></li>
+                    <li><a href="Guidelines.html">GUIDELINES</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
     <style>
         body {
-            background-image: url('CAMPUS/background.png'); /
+            background-image: url('CAMPUS/background.png'); 
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -92,6 +90,7 @@
             Welcome to our world-renowned campus dormitory, where luxury meets... well, not so much luxury! Behold the ISCP Dormitory, where you can experience the epitome of cramped living spaces and questionable hygiene standards. </p>
     </div>
 
+    <div class="container reveal">
         <div class="feat_row">
             <div class="feat_col">
                 <img id="img_feat" src="dorm/Barbie.png" alt="BARBIE DREAM HOUSE"/>
@@ -109,6 +108,7 @@
             </div>
         </div>
 
+        <div class="container reveal">
         <div class="feat_row">
             <div class="feat_col">
                 <img id="img_feat" src="dorm/Katipunan Hall.png" alt="KATIPUNAN HALL"/>
@@ -124,6 +124,7 @@
             </div> 
         </div>
 
+        <div class="container reveal">
         <div class="feat_row">
             <div class="feat_col">
                 <img id="img_feat" src="dorm/Moon Dorm.png" alt="MOON BASE"/>
@@ -140,6 +141,47 @@
         </div>
         </div>
 
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+            <script type="text/javascript">
+                VanillaTilt.init(document.querySelectorAll("#img_his"), {
+                    max: 25,
+                    speed: 400
+                });
+
+                VanillaTilt.init(document.querySelectorAll("#img_feat"), {
+                    max: 25,
+                    speed: 400
+                });
+            </script>
+    </body>
+    </html>
+
+        <script type="text/javascript">
+            window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i = 0; i < reveals.length; i++){
+                
+                var windowheight = window.innerHeight;
+                var revealtop = reveals [i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals [i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+        </script>
+        <script>
+            $(window).on('load', function(){
+                $(".loader").fadeOut(1000);
+                $(".content").fadeIn(1000);
+            })
+        </script>
 </body>
 </html>
 
