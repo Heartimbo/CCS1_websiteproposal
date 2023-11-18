@@ -501,7 +501,7 @@ title {
 .feat_textt {
     font-family: "Montserrat", sans-serif;
     text-align:center;
-    margin-top: -0px;
+    margin-top: 60px;
     color: #102b5d;
     font-size: 50px;
     margin-bottom: 10px;
@@ -549,6 +549,8 @@ title {
     line-height: 30px;
    
 }
+
+
 
 .vmg_note {
     display: flex;
