@@ -10,8 +10,14 @@
         <link rel="stylesheet" href="styles.css">
 
         <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>      
+    <div class="loader">
+        <div><img class="load" src="pics/logo.png" 
+            alt="International State College of the Philippines logo"></div>
+    </div>
+    <div class="content"> 
         <div class="navbar-header">
             <img class="logo" src="pics/logo.png" 
             alt="International State College of the Philippines logo">
@@ -80,20 +86,21 @@
     </nav>
     <style>
         body {
-            background-image: url('CAMPUS/background.png'); /
+            background-image: url('CAMPUS/background.png'); 
             background-size: cover;
             background-repeat: no-repeat;
         }
     </style>
 
 <div class="wrapper">
-<h1 class="vmg"> ISCP EVENTS </h1>
+<h1 class="vmgt"> ISCP EVENTS </h1>
 <div class="wrapper">
     <p class="vmg_p"> 
         "Welcome to the most spectacularly events of the school. 
         At ISCP, we believe that normal events are overrated, and it's time to celebrate the quirks and talents that make absolutely no sense." </p>
 </div>
-    <div class="feat_row">
+<div class="container reveal">
+    <div class="feat1_row">
         <div class="feat_col">
             <img id="img_feat" src="Eventspic/Cafeteria Food Sculpture Contest.png" alt="CAFETERIA FOOD SCULPTURE CONTEST"/>
             <h2 class="feat_title"> CAFETERIA FOOD SCULPTURE CONTEST</h2>
@@ -116,7 +123,8 @@
         </div>
     </div>
 
-    <div class="feat_row">
+    <div class="container reveal">
+    <div class="feat1_row">
         <div class="feat_col">
             <img id="img_feat" src="Eventspic/Homework Bonfire Bonanza.png" alt="HOMEWORK BONFIRE BONANZA"/>
             <h2 class="feat_title"> HOMEWORK BONFIRE BONANZA </h2>
@@ -140,7 +148,8 @@
         </div> 
     </div>
 
-    <div class="feat_row">
+    <div class="container reveal">
+    <div class="feat1_row">
         <div class="feat_col">
             <img id="img_feat" src="Eventspic/Lunch Food Fight.png" alt="LUNCH FOOD FIGHT"/>
             <h2 class="feat_title"> LUNCH FOOD FIGHT </h2>
@@ -165,7 +174,8 @@
     </div>
     </div>
 
-    <div class="feat_row">
+    <div class="container reveal">
+    <div class="feat2_row">
         <div class="feat_col">
             <img id="img_feat" src="Eventspic/Teacher Vs Student Dance-Off.png" alt="TEACHER VS. STUDENT DANCE-OFF"/>
             <h2 class="feat_title"> TEACHER VS. STUDENT DANCE-OFF </h2>
@@ -174,5 +184,52 @@
                 <br>Warning: May involve questionable dance styles.</h1>
         </div>
     </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+            <script type="text/javascript">
+                VanillaTilt.init(document.querySelectorAll("#img_his"), {
+                    max: 25,
+                    speed: 400
+                });
+
+                VanillaTilt.init(document.querySelectorAll("#img_feat"), {
+                    max: 25,
+                    speed: 400
+                });
+            </script>
+    </body>
+    </html>
+
+        <script type="text/javascript">
+            window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i = 0; i < reveals.length; i++){
+                
+                var windowheight = window.innerHeight;
+                var revealtop = reveals [i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals [i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+        </script>
+        <script>
+            $(window).on('load', function(){
+                $(".loader").fadeOut(1000);
+                $(".content").fadeIn(1000);
+            })
+        </script>
 </body>
 </html>
