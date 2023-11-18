@@ -10,8 +10,15 @@
         <link rel="stylesheet" href="styles.css">
 
         <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<body>      
+<body>
+    <div class="loader">
+        <div><img class="load" src="pics/logo.png" 
+            alt="International State College of the Philippines logo"></div>
+    </div>
+    <div class="content"> 
+        <div class="navbar-header">      
         <div class="navbar-header">
             <img class="logo" src="pics/logo.png" 
             alt="International State College of the Philippines logo">
@@ -42,24 +49,27 @@
             <li><a href="#">ADMISSIONS <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
                     <li><a href="Enrollment.html">ENROLLMENT</a></li>
-                    <li><a href="Tuition&Costs.html">TUITION & COSTS</a></li>
                 </ul>
             </li>
             
             <li><a href="#">ACADEMICS <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
-                    <li><a href="#">PROGRAMS</a></li>
+                    <li><a href="Programs.html">PROGRAMS</a></li>
                 </ul>
             </li>
             <li><a href="#">SERVICES <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
-                <li><a href="CampusChaplaincy.html">CAMPUS CHAPLAINCY</a></li>
-                <li><a href="StudentAffairs.html">STUDENT AFFAIRS</a></li>
-                <li><a href="SchoolManual.html">COLLEGE MANUAL</a></li>
+                    <li><a href="Alumni.html">ALUMNI</a></li>
+                    <li><a href="Dormitories.html">DORMITORIES</a></li>
+                    <li><a href="CampusChaplaincy.html">CAMPUS CHAPLAINCY</a></li>
+                    <li><a href="FoodServices.html">FOOD SERVICES</a></li>
+                    <li><a href="StudentAffairs.html">STUDENT AFFAIRS</a></li>
+                    <li><a href="SchoolManual.html">COLLEGE MANUAL</a></li>
                 </ul>
             </li>
             <li><a href="#">NEWS <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
+                    <li><a href="Events.html">EVENTS</a></li>
                     <li><a href="Advisories.html">ADVISORIES</a></li>
                     <li><a href="Guidelines.html">GUIDELINES</a></li>
                 </ul>
@@ -68,7 +78,7 @@
     </nav>
     <style>
         body {
-            background-image: url('CAMPUS/background.png'); /
+            background-image: url('CAMPUS/background.png'); 
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -88,6 +98,13 @@
         <img class="bartending" src="CAMPUS/Program Offered/Bartending-NC-II.png" alt="BS Bartending">
         <img class="cosmetology" src="CAMPUS/Program Offered/Cosmetology.png" alt="BS Cosmetology">
     </div>
+
+<script>
+    $(window).on('load', function(){
+        $(".loader").fadeOut(1000);
+        $(".content").fadeIn(1000);
+    })
+</script>
 
 </body>
 </html>
