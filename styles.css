@@ -399,6 +399,22 @@ title {
     margin-top: -120px;
 }
 
+.feat1_row {
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    display:flex;
+    margin-top: -120px;
+}
+
+.feat2_row {
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    display:flex;
+    margin-top: 15px;
+}
+
 .feat_row1 {
     align-items: center;
     place-items: center;
@@ -500,6 +516,15 @@ title {
     margin-top: -50px;
     color: #051d49;
     margin-bottom: 10px;
+}
+
+.vmgt {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    color: #051d49;
+    margin-bottom: 0px;
 }
 
 .vmg1 {
