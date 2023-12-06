@@ -20,16 +20,27 @@
     </div>
     <div class="content"> 
         <div class="navbar-header">
-            <img class="logo" src="pics/logo.png" 
-            alt="International State College of the Philippines logo">
-    
-            <img class="logo" src="pics/text.png"
-            alt="International State College of the Philippines | The Official ISCP Website">
+            <div class="logo-wrap">
+            <img
+                class="logo"
+                src="pics/logo.png"
+                alt="International State College of the Philippines logo"
+            />
 
+            <img
+                class="logo-text"
+                src="pics/text.png"
+                alt="International State College of the Philippines | The Official ISCP Website"
+            />
+            </div>
+            <div class="search-wrap">
             <div class="search-box">
-                <input type="text"
-                placeholder="SEARCH">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="SEARCH" />
+                <i
+                class="fa-solid fa-magnifying-glass"
+                onclick="performSearch()"
+                ></i>
+            </div>
             </div>
         </div>
     <nav>
