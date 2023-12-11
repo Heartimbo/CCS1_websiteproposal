@@ -103,35 +103,58 @@
       </nav>
 
       <section class="container">
-        <div class="slider-wrapper">
-          <div class="slider">
+        <div class="slider">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first">
             <img
               id="slide-1"
               src="../CAMPUS/iscp-1.jpeg"
-              alt="ISCP Campus View 1"
-            />
+              alt="ISCP Campus View 1">
+            </div>
+            
+            <div class="slide">
             <img
               id="slide-2"
               src="../CAMPUS/iscp-2.jpeg"
               alt="ISCP Campus View 2"
             />
+          </div>
+
+            <div class="slide">
             <img
               id="slide-3"
               src="../CAMPUS/iscp-3.jpeg"
               alt="ISCP Campus View 3"
             />
+          </div>
+
+            <div class="slide">
             <img
               id="slide-4"
               src="../CAMPUS/iscp-4.jpeg"
               alt="ISCP Campus View 3"
             />
+          </div>    
           </div>
-          <div class="slider-nav">
-            <a href="#slider-1"></a>
-            <a href="#slider-2"></a>
-            <a href="#slider-3"></a>
-            <a href="#slider-4"></a>
-          </div>
+
+        <div class="navigation-auto"> 
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+            </div>
+
         </div>
       </section>
       <div class="bottom-div">
@@ -160,6 +183,17 @@
         $(".loader").fadeOut(1000);
         $(".content").fadeIn(1000);
       });
+    </script>
+
+    <script>
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter). checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
     </script>
   </body>
 </html>
