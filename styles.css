@@ -978,3 +978,47 @@ video {
     width: 330px;
   }
 }
+
+form {
+  width: 90%; /* Increase width for a more landscape look */
+  max-width: 800px; /* Adjust maximum width */
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 3px solid #007bff; /* Change border color to blue */
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.2); /* Adjust shadow to match blue theme */
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #007bff; /* Change border color to blue */
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #007bff; /* Change button color to blue */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
